@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".ui.anxiety.anxietyResultActivity">
+
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/app_logo" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/your_result_is"
+        android:textAllCaps="false"
+        android:textColor="#F44336"
+        android:textColorHighlight="#3F51B5"
+        android:textColorHint="#3F51B5"
+        android:textColorLink="#3F51B5"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/Logo"
+
+        />
+
+    <Button
+        android:id="@+id/retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#E91E63"
+        android:text="@string/try_again"
+        android:textAllCaps="false"
+        android:textColor="#0C0B0C"
+        android:textColorHighlight="#050405"
+        android:textColorHint="#020102"
+        android:textColorLink="#151015"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/result"
+
+        />
+</LinearLayout>
